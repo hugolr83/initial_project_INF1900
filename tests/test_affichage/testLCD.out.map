@@ -1,0 +1,656 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_udivmodhi4.o)
+                              customprocs.o (__udivmodhi4)
+/usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_exit.o)
+                              /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/crtatmega324pa.o (exit)
+/usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_copy_data.o)
+                              customprocs.o (__do_copy_data)
+/usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(malloc.o)
+                              lcm_so1602dtr_m_fw.o (malloc)
+/usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(sprintf.o)
+                              lcm_so1602dtr_m_fw.o (sprintf)
+/usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                              /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(sprintf.o) (vfprintf)
+/usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(strnlen_P.o)
+                              /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(vfprintf_std.o) (strnlen_P)
+/usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(strnlen.o)
+                              /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(vfprintf_std.o) (strnlen)
+/usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(fputc.o)
+                              /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(vfprintf_std.o) (fputc)
+/usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+                              /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(vfprintf_std.o) (__ultoa_invert)
+/usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_clear_bss.o)
+                              /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(malloc.o) (__do_clear_bss)
+/usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_prologue.o)
+                              /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(sprintf.o) (__prologue_saves__)
+/usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_epilogue.o)
+                              /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(sprintf.o) (__epilogue_restores__)
+
+Allocating common symbols
+Common symbol       size              file
+
+__brkval            0x2               /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(malloc.o)
+__flp               0x2               /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(malloc.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x0000000000000000 0x0000000000020000 xr
+data             0x0000000000800060 0x000000000000ffa0 rw !x
+eeprom           0x0000000000810000 0x0000000000010000 rw !x
+fuse             0x0000000000820000 0x0000000000000003 rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+user_signatures  0x0000000000850000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/crtatmega324pa.o
+LOAD customprocs.o
+LOAD demo.o
+LOAD lcm_so1602dtr_m.o
+LOAD lcm_so1602dtr_m_fw.o
+LOAD /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libm.a
+START GROUP
+LOAD /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a
+LOAD /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libm.a
+LOAD /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a
+LOAD /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libatmega324pa.a
+END GROUP
+                0x0000000000020000                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                0x000000000000ffa0                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                0x0000000000010000                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x0000000000000003]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x0000000000000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x0000000000000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x0000000000000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000000000      0xfb4
+ *(.vectors)
+ .vectors       0x0000000000000000       0x7c /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/crtatmega324pa.o
+                0x0000000000000000                __vectors
+                0x0000000000000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x000000000000007c                . = ALIGN (0x2)
+                0x000000000000007c                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x000000000000007c        0x0 linker stubs
+ *(.trampolines*)
+                0x000000000000007c                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem.*)
+                0x000000000000007c                . = ALIGN (0x2)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000000000000007c                __ctors_start = .
+ *(.ctors)
+                0x000000000000007c                __ctors_end = .
+                0x000000000000007c                __dtors_start = .
+ *(.dtors)
+                0x000000000000007c                __dtors_end = .
+ SORT_BY_NAME(*)(.ctors)
+ SORT_BY_NAME(*)(.dtors)
+ *(.init0)
+ .init0         0x000000000000007c        0x0 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/crtatmega324pa.o
+                0x000000000000007c                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000000000000007c        0xc /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/crtatmega324pa.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000000000000088       0x16 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_copy_data.o)
+                0x0000000000000088                __do_copy_data
+ .init4         0x000000000000009e       0x10 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_clear_bss.o)
+                0x000000000000009e                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000000000000ae        0x8 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/crtatmega324pa.o
+ *(.init9)
+ *(.text)
+ .text          0x00000000000000b6        0x4 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/crtatmega324pa.o
+                0x00000000000000b6                __vector_22
+                0x00000000000000b6                __vector_28
+                0x00000000000000b6                __vector_1
+                0x00000000000000b6                __vector_24
+                0x00000000000000b6                __vector_12
+                0x00000000000000b6                __bad_interrupt
+                0x00000000000000b6                __vector_6
+                0x00000000000000b6                __vector_3
+                0x00000000000000b6                __vector_23
+                0x00000000000000b6                __vector_30
+                0x00000000000000b6                __vector_25
+                0x00000000000000b6                __vector_11
+                0x00000000000000b6                __vector_13
+                0x00000000000000b6                __vector_17
+                0x00000000000000b6                __vector_19
+                0x00000000000000b6                __vector_7
+                0x00000000000000b6                __vector_27
+                0x00000000000000b6                __vector_5
+                0x00000000000000b6                __vector_4
+                0x00000000000000b6                __vector_9
+                0x00000000000000b6                __vector_2
+                0x00000000000000b6                __vector_21
+                0x00000000000000b6                __vector_15
+                0x00000000000000b6                __vector_29
+                0x00000000000000b6                __vector_8
+                0x00000000000000b6                __vector_26
+                0x00000000000000b6                __vector_14
+                0x00000000000000b6                __vector_10
+                0x00000000000000b6                __vector_16
+                0x00000000000000b6                __vector_18
+                0x00000000000000b6                __vector_20
+ .text          0x00000000000000ba       0x8e customprocs.o
+                0x00000000000000ba                _Z9cp_strlenPKc
+                0x00000000000000ce                _Z7cp_itoaPcjh
+                0x000000000000012a                _Z10cp_wait_msj
+ .text          0x0000000000000148        0x0 demo.o
+ .text          0x0000000000000148      0x1f2 lcm_so1602dtr_m.o
+                0x00000000000001de                _Z15lcmd_disp_clearPVh
+                0x00000000000001ea                _Z14lcmd_disp_homePVh
+                0x00000000000001f6                _Z13lcmd_entry_smhhPVh
+                0x0000000000000206                _Z16lcmd_disp_on_offhhhPVh
+                0x000000000000021e                _Z19lcmd_disp_cur_shifthhPVh
+                0x000000000000023c                _Z13lcmd_func_sethhPVh
+                0x000000000000025a                _Z17lcmd_cgr_set_addrhPVh
+                0x000000000000026a                _Z17lcmd_ddr_set_addrhPVh
+                0x0000000000000278                _Z10lcmd_writehPVh
+                0x0000000000000284                _Z14lcmd_init_4bitPVhS0_
+ .text          0x000000000000033a      0x3c8 lcm_so1602dtr_m_fw.o
+                0x000000000000033a                _ZN3LCMC1EPVhS1_
+                0x000000000000033a                _ZN3LCMC2EPVhS1_
+                0x0000000000000376                _ZN3LCMD1Ev
+                0x0000000000000376                _ZN3LCMD2Ev
+                0x0000000000000380                _ZN3LCM8en_blinkEb
+                0x00000000000003a2                _ZN3LCM6en_curEb
+                0x00000000000003c2                _ZN3LCM12set_bc_indexEh
+                0x00000000000003de                _ZN3LCM5clearEv
+                0x0000000000000520                _ZN3LCM5writeEPKchb
+                0x000000000000052c                _ZN3LCM3putEc
+                0x0000000000000562                _ZN3LCM8build_ccEhPKh
+                0x00000000000005b4                _ZN3LCMlsEPKc
+                0x00000000000005d0                _ZN3LCMlsEj
+                0x000000000000060c                _ZN3LCMlsEi
+                0x0000000000000648                _ZN3LCMlsEc
+                0x0000000000000684                _ZN3LCMaSEPKc
+                0x00000000000006ba                _ZN3LCMixEh
+                0x00000000000006c8                _ZN3LCMmIEh
+ .text          0x0000000000000702        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text          0x0000000000000702        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_exit.o)
+ .text          0x0000000000000702        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_copy_data.o)
+ .text          0x0000000000000702        0x0 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(malloc.o)
+ .text          0x0000000000000702        0x0 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(sprintf.o)
+ .text          0x0000000000000702        0x0 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .text          0x0000000000000702        0x0 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(strnlen_P.o)
+ .text          0x0000000000000702        0x0 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(strnlen.o)
+ .text          0x0000000000000702        0x0 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(fputc.o)
+ .text          0x0000000000000702        0x0 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+ .text          0x0000000000000702        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_clear_bss.o)
+ .text          0x0000000000000702        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_prologue.o)
+ .text          0x0000000000000702        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_epilogue.o)
+                0x0000000000000702                . = ALIGN (0x2)
+ *(.text.*)
+ .text.startup  0x0000000000000702       0x8c demo.o
+                0x0000000000000702                main
+ .text.libgcc.mul
+                0x000000000000078e        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.div
+                0x000000000000078e       0x28 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_udivmodhi4.o)
+                0x000000000000078e                __udivmodhi4
+ .text.libgcc   0x00000000000007b6        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.prologue
+                0x00000000000007b6        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.builtins
+                0x00000000000007b6        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fmul
+                0x00000000000007b6        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fixed
+                0x00000000000007b6        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.mul
+                0x00000000000007b6        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000000007b6        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc   0x00000000000007b6        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000000007b6        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000000007b6        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000000007b6        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000000000007b6        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000000007b6        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000000007b6        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000000007b6        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000000007b6        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000000007b6        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000000007b6        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000000000007b6        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_copy_data.o)
+ .text.avr-libc
+                0x00000000000007b6      0x24a /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(malloc.o)
+                0x00000000000007b6                malloc
+                0x00000000000008ee                free
+ .text.avr-libc
+                0x0000000000000a00       0x46 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(sprintf.o)
+                0x0000000000000a00                sprintf
+ .text.avr-libc
+                0x0000000000000a46      0x3b4 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                0x0000000000000a46                vfprintf
+ .text.avr-libc
+                0x0000000000000dfa       0x16 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(strnlen_P.o)
+                0x0000000000000dfa                strnlen_P
+ .text.avr-libc
+                0x0000000000000e10       0x16 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(strnlen.o)
+                0x0000000000000e10                strnlen
+ .text.avr-libc
+                0x0000000000000e26       0x60 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(fputc.o)
+                0x0000000000000e26                fputc
+ .text.avr-libc
+                0x0000000000000e86       0xbc /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+                0x0000000000000e86                __ultoa_invert
+ .text.libgcc.mul
+                0x0000000000000f42        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x0000000000000f42        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000000000000f42        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x0000000000000f42        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x0000000000000f42        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x0000000000000f42        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x0000000000000f42        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x0000000000000f42        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_prologue.o)
+ .text.libgcc.div
+                0x0000000000000f42        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_prologue.o)
+ .text.libgcc   0x0000000000000f42        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_prologue.o)
+ .text.libgcc.prologue
+                0x0000000000000f42       0x38 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_prologue.o)
+                0x0000000000000f42                __prologue_saves__
+ .text.libgcc.builtins
+                0x0000000000000f7a        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_prologue.o)
+ .text.libgcc.fmul
+                0x0000000000000f7a        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_prologue.o)
+ .text.libgcc.fixed
+                0x0000000000000f7a        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_prologue.o)
+ .text.libgcc.mul
+                0x0000000000000f7a        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc.div
+                0x0000000000000f7a        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc   0x0000000000000f7a        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc.prologue
+                0x0000000000000f7a       0x36 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_epilogue.o)
+                0x0000000000000f7a                __epilogue_restores__
+ .text.libgcc.builtins
+                0x0000000000000fb0        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc.fmul
+                0x0000000000000fb0        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_epilogue.o)
+ .text.libgcc.fixed
+                0x0000000000000fb0        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_epilogue.o)
+                0x0000000000000fb0                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x0000000000000fb0        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_exit.o)
+                0x0000000000000fb0                exit
+                0x0000000000000fb0                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x0000000000000fb0        0x4 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_exit.o)
+ *(.fini0)
+ *(.hightext)
+ *(.hightext*)
+ *(.progmemx.*)
+                0x0000000000000fb4                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+                0x0000000000000fb4                _etext = .
+
+.data           0x0000000000800100       0x2e load address 0x0000000000000fb4
+                0x0000000000800100                PROVIDE (__data_start = .)
+ *(.data)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/crtatmega324pa.o
+ .data          0x0000000000800100        0x0 customprocs.o
+ .data          0x0000000000800100        0x0 demo.o
+ .data          0x0000000000800100        0x0 lcm_so1602dtr_m.o
+ .data          0x0000000000800100        0x0 lcm_so1602dtr_m_fw.o
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_udivmodhi4.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_exit.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_copy_data.o)
+ .data          0x0000000000800100        0x6 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(malloc.o)
+                0x0000000000800100                __malloc_heap_end
+                0x0000000000800102                __malloc_heap_start
+                0x0000000000800104                __malloc_margin
+ .data          0x0000000000800106        0x0 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(sprintf.o)
+ .data          0x0000000000800106        0x0 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .data          0x0000000000800106        0x0 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(strnlen_P.o)
+ .data          0x0000000000800106        0x0 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(strnlen.o)
+ .data          0x0000000000800106        0x0 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(fputc.o)
+ .data          0x0000000000800106        0x0 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+ .data          0x0000000000800106        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_clear_bss.o)
+ .data          0x0000000000800106        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_prologue.o)
+ .data          0x0000000000800106        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_epilogue.o)
+ *(.data*)
+ *(.gnu.linkonce.d*)
+ *(.rodata)
+ *(.rodata*)
+ .rodata.str1.1
+                0x0000000000800106       0x11 customprocs.o
+ .rodata.str1.1
+                0x0000000000800117        0xd demo.o
+ .rodata.str1.1
+                0x0000000000800124        0x9 lcm_so1602dtr_m_fw.o
+ *(.gnu.linkonce.r*)
+                0x000000000080012e                . = ALIGN (0x2)
+ *fill*         0x000000000080012d        0x1 
+                0x000000000080012e                _edata = .
+                0x000000000080012e                PROVIDE (__data_end = .)
+
+.bss            0x000000000080012e        0x4
+                0x000000000080012e                PROVIDE (__bss_start = .)
+ *(.bss)
+ .bss           0x000000000080012e        0x0 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/crtatmega324pa.o
+ .bss           0x000000000080012e        0x0 customprocs.o
+ .bss           0x000000000080012e        0x0 demo.o
+ .bss           0x000000000080012e        0x0 lcm_so1602dtr_m.o
+ .bss           0x000000000080012e        0x0 lcm_so1602dtr_m_fw.o
+ .bss           0x000000000080012e        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_udivmodhi4.o)
+ .bss           0x000000000080012e        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_exit.o)
+ .bss           0x000000000080012e        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_copy_data.o)
+ .bss           0x000000000080012e        0x0 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(malloc.o)
+ .bss           0x000000000080012e        0x0 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(sprintf.o)
+ .bss           0x000000000080012e        0x0 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .bss           0x000000000080012e        0x0 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(strnlen_P.o)
+ .bss           0x000000000080012e        0x0 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(strnlen.o)
+ .bss           0x000000000080012e        0x0 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(fputc.o)
+ .bss           0x000000000080012e        0x0 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+ .bss           0x000000000080012e        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_clear_bss.o)
+ .bss           0x000000000080012e        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_prologue.o)
+ .bss           0x000000000080012e        0x0 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_epilogue.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x000000000080012e        0x4 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(malloc.o)
+                0x000000000080012e                __brkval
+                0x0000000000800130                __flp
+                0x0000000000800132                PROVIDE (__bss_end = .)
+                0x0000000000000fb4                __data_load_start = LOADADDR (.data)
+                0x0000000000000fe2                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0000000000800132        0x0
+                [!provide]                        PROVIDE (__noinit_start = .)
+ *(.noinit*)
+                [!provide]                        PROVIDE (__noinit_end = .)
+                0x0000000000800132                _end = .
+                0x0000000000800132                PROVIDE (__heap_start = .)
+
+.eeprom         0x0000000000810000        0x0
+ *(.eeprom*)
+                0x0000000000810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x0000000000000000     0x2f64
+ *(.stab)
+ .stab          0x0000000000000000      0x6d8 customprocs.o
+ .stab          0x00000000000006d8      0x5d0 demo.o
+                                        0x5dc (size before relaxing)
+ .stab          0x0000000000000ca8      0xc48 lcm_so1602dtr_m.o
+                                        0xc54 (size before relaxing)
+ .stab          0x00000000000018f0      0xfd8 lcm_so1602dtr_m_fw.o
+                                        0xfe4 (size before relaxing)
+ .stab          0x00000000000028c8      0x15c /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_udivmodhi4.o)
+                                        0x168 (size before relaxing)
+ .stab          0x0000000000002a24       0x6c /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_exit.o)
+                                         0x78 (size before relaxing)
+ .stab          0x0000000000002a90       0xd8 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_copy_data.o)
+                                         0xe4 (size before relaxing)
+ .stab          0x0000000000002b68       0xb4 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_clear_bss.o)
+                                         0xc0 (size before relaxing)
+ .stab          0x0000000000002c1c      0x1a4 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_prologue.o)
+                                        0x1b0 (size before relaxing)
+ .stab          0x0000000000002dc0      0x1a4 /usr/lib/gcc/avr/7.4.0/avr5/libgcc.a(_epilogue.o)
+                                        0x1b0 (size before relaxing)
+
+.stabstr        0x0000000000000000     0x2854
+ *(.stabstr)
+ .stabstr       0x0000000000000000     0x2854 customprocs.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x42
+ *(.comment)
+ .comment       0x0000000000000000       0x21 customprocs.o
+                                         0x22 (size before relaxing)
+ .comment       0x0000000000000021       0x22 demo.o
+ .comment       0x0000000000000021       0x22 lcm_so1602dtr_m.o
+ .comment       0x0000000000000021       0x22 lcm_so1602dtr_m_fw.o
+ .comment       0x0000000000000021       0x21 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(malloc.o)
+                                         0x22 (size before relaxing)
+ .comment       0x0000000000000042       0x22 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(sprintf.o)
+ .comment       0x0000000000000042       0x22 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .comment       0x0000000000000042       0x22 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/libc.a(fputc.o)
+
+.note.gnu.avr.deviceinfo
+                0x0000000000000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x0000000000000000       0x40 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/crtatmega324pa.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000      0x6cc
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000      0x6cc /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/crtatmega324pa.o
+
+.debug_abbrev   0x0000000000000000      0x66e
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x66e /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/crtatmega324pa.o
+
+.debug_line     0x0000000000000000       0x1d
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000       0x1d /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/crtatmega324pa.o
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str      0x0000000000000000      0x255
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x255 /usr/lib/gcc/avr/7.4.0/../../../../avr/lib/avr5/crtatmega324pa.o
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_addr
+ *(.debug_addr)
+OUTPUT(testLCD.out elf32-avr)
+LOAD linker stubs

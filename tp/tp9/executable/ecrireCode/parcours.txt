@@ -1,0 +1,61 @@
+//Séquence de démarrage:
+DBT;
+DAL 60;
+ATT 50;
+DET 60;
+DAL 60;
+ATT 50;
+DET 60;
+SGO 64; //debut de la melodie 
+ATT 12;
+SGO 63;
+ATT 12;
+SGO 64;
+ATT 12;
+SGO 63;
+ATT 12;
+SGO 64;
+ATT 12;
+SGO 59;
+ATT 12;
+SGO 62;
+ATT 12;
+SGO 60;
+ATT 12;
+SGO 57;
+ATT 36;
+SAR;   //fin de la melodie
+
+//Chorégraphie;
+
+DBC 4;  #début boucle x8
+MAV 255; #vitesse 100% du PMW
+ATT 80;  #2 secondes
+MAR;
+ATT 20;
+TRG;    
+DAL 60; 
+ATT 40;
+DET 60;
+FBC; #fin boucle
+
+DBC 4; //debut 2e boucle
+MAV 255; #1er mouvement
+ATT 80;
+MAR;
+ATT 20;
+TRD;
+DAL 60;
+ATT 40;
+DET 60;
+FBC;
+MAR;
+MRE 255;
+ATT 80;
+MAR;
+FIN ;
+
+
+
+
+
